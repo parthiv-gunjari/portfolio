@@ -1,0 +1,1133 @@
+/* Global font settings */
+body {
+    font-family: 'Poppins', sans-serif; /* Define the global font family */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global content font size */
+body, p, a, li, span {
+    font-size: 16px; /* Define global font size for all content */
+    line-height: 1.6; /* Optional: Adjust line height for better readability */
+    color: #333; /* Define a standard color for content text */
+}
+
+/* Global heading color and style */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #003399; /* Consistent heading color */
+    margin-bottom: 20px; /* Optional: for consistent spacing below headings */
+}
+/* Force global heading color and style */
+ h2{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+    color: #003399 !important; /* Consistent heading color */
+    margin-bottom: 20px !important; /* Consistent spacing below headings */
+}
+/* Define consistent font size for all headings */
+h1 {
+    font-size: 2rem; /* Adjust this value to your desired size for h1 */
+}
+
+h2 {
+    font-size: 1.75rem; /* Adjust this value to your desired size for h2 */
+}
+
+h3 {
+    font-size: 1.5rem; /* Adjust this value to your desired size for h3 */
+}
+
+h4 {
+    font-size: 1.25rem; /* Adjust this value to your desired size for h4 */
+}
+
+h5, h6 {
+    font-size: 2rem; /* Adjust this value for smaller headings */
+}
+
+h2 {
+    color: #003399;
+}
+
+/* Adjustments for specific sections */
+.about-content p, .skills p, .projects p, .achievements p, .publications p {
+    font-size: 16px; /* Make all paragraph text uniform */
+}
+
+/* For buttons and links */
+a, button {
+    font-size: 16px; /* Standardize font size for buttons and links */
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #003399;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+}
+
+.profile-section {
+    width: 100%;
+    background: linear-gradient(180deg, #ffcc00 50%, #003399 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    background-color: white; /* or use your image background color */
+    /* Apply shadow matching the background color */
+    box-shadow: 0px 0px 12px 4px rgba(0, 51, 153, 0.3), /* Blue shadow */
+                0px 0px 12px 4px rgba(255, 204, 0, 0.3); /* Yellow shadow */
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.menu a.active {
+    color: #ffcc00;
+}
+
+.footer {
+    padding: 20px;
+    color: white;
+    font-size: 12px;
+}
+.footer p{
+    color: white;
+}
+.footer span {
+    color: #ffcc00;
+}
+
+/* Main content */
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-link {
+    font-size: 36px; /* Increased icon size */
+    color: white; /* Initial icon color */
+    margin: 0 20px; /* Spacing around each icon */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover */
+    text-decoration: none; /* No text decoration */
+}
+
+.icon-link:hover {
+    color: #ffcc00; /* Hover effect color */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    text-decoration: none; /* Ensure no underline or decoration */
+}
+main {
+    margin-left: 255px;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: calc(100% - 255px);
+}
+
+/* Section Styles */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-content {
+    color: white;
+    margin: 0;
+}
+
+.main-name {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.dynamic-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #ffcc00;
+    color: #003399;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* About Section Layout */
+.about {
+    padding: 50px 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    max-width: 600px;
+    padding-left: 40px;
+}
+
+.about-content h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 60px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills h2 {
+    text-align: center; /* Centers the heading */
+    font-size: 2rem;
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 30px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+.skill p {
+    font-weight: bold; /* Makes the skill text bold */
+}
+.progress {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    width: 100%;
+    height: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 4px;
+    transition: width 2s ease-in-out;
+}
+
+.skill:nth-child(1) .progress-bar {
+    background-color: #ff6347;
+}
+
+.skill:nth-child(2) .progress-bar {
+    background-color: #3cb371;
+}
+
+.skill:nth-child(3) .progress-bar {
+    background-color: #ffa500;
+}
+
+.skill:nth-child(4) .progress-bar {
+    background-color: #4682b4;
+}
+
+.skill:nth-child(5) .progress-bar {
+    background-color: #8a2be2;
+}
+
+.skill:nth-child(6) .progress-bar {
+    background-color: #ff69b4;
+}
+
+.skill:nth-child(7) .progress-bar {
+    background-color: #20b2aa;
+}
+
+/* Timeline with Icons */
+/* Timeline with Icons */
+.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+    padding-left: 60px; /* Default left padding */
+  }
+  
+  .timeline-with-icons .timeline-item {
+    position: relative;
+    margin-bottom: 40px; /* Space between timeline items */
+  }
+  
+  .timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Ensure icons are sized properly */
+  }
+  
+  /* Add margin-left for screens < 1440px */
+  @media (max-width: 1440px) {
+    .timeline-with-icons {
+      padding-left: 40px; /* Margin left for screens < 1440px */
+    }
+  
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: -50px; /* Adjusted icon position to match the margin */
+    }
+  }
+  
+  /* Add more margin-left for desktop view (min-width 1024px) */
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .timeline-with-icons {
+      padding-left: 40px; /* Margin left for medium screens between 1024px and 1439px */
+    }
+  
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: -50px; /* Adjusted icon position */
+    }
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .timeline-with-icons {
+      padding-left: 20px;
+    }
+  
+    .timeline-with-icons .timeline-icon {
+      left: -40px;
+    }
+  
+    .timeline-with-icons .timeline-item {
+      text-align: center;
+    }
+  
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+/* For screen widths less than 1400px, apply 40px left margin */
+@media (max-width: 1400px) {
+    .timeline-with-icons {
+      margin-left: 40px;
+    }
+  }
+  
+  /* For screen widths less than 990px, remove the left margin */
+  @media (max-width: 990px) {
+    .timeline-with-icons {
+      margin-left: 0px;
+    }
+  }
+  /* For screens smaller than 770px, ensure the icons are perfectly centered on the vertical line */
+@media (max-width: 770px) {
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: 50%; /* Align icons to the center */
+      transform: translateX(-50%); /* Translate by -50% to center perfectly */
+      margin-left: -16px; /* Fine-tune the margin to keep it on the vertical line */
+    }
+  }
+  @media (max-width: 770px) and (min-width: 760px) {
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: 45px; /* Position icons closer to the vertical line */
+      transform: translateX(0); /* No translation needed */
+    }
+  
+    .timeline-with-icons .timeline-item {
+      padding-left: 100px; /* Ensure text starts after the icon */
+    }
+  }
+  @media (max-width: 660px) {
+    .timeline-with-icons .timeline-item h5 {
+      font-size: 16px; /* Reduce font size of the degree text */
+    }
+  }
+  @media (max-width: 760px) {
+    .timeline-with-icons {
+      border-left: 2px solid hsl(0, 0%, 90%); /* Keep the vertical line visible */
+    }
+  
+    .timeline-with-icons .timeline-item .timeline-icon {
+      left: -15px; /* Move the icon to be attached to the vertical line */
+      transform: none; /* Remove centering transformation */
+      height: 25px;  /* Keep the icon smaller */
+      width: 25px;
+    }
+  
+    .timeline-with-icons .timeline-item h5 {
+      font-size: 14px; /* Keep reduced font size for degree names */
+      margin-left: 40px; /* Add space to the left of the degree name */
+    }
+  
+    .timeline-with-icons .timeline-item p {
+      font-size: 12px; /* Reduce the font size for the description text */
+      margin-left: 40px; /* Keep description text aligned under the degree name */
+    }
+  
+    .timeline-with-icons .timeline-item h5,
+    .timeline-with-icons .timeline-item .timeline-icon {
+      display: inline-block; /* Keep both in the same line */
+      vertical-align: middle; /* Align them vertically */
+    }
+  }
+ 
+  /* Ensure proper centering for screens less than 768px */
+  @media (max-width: 768px) {
+    .timeline-with-icons .timeline-item .timeline-icon {
+     
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 760px) {
+    /* Adjust the icon position for smaller screens */
+    .timeline-with-icons .timeline-item .timeline-icon {
+      position: relative; /* Remove the absolute positioning */
+      margin-bottom: 10px; /* Add some margin below the icon */
+      left: 0; /* Reset the left positioning */
+      transform: none; /* Remove the translation */
+    }
+  
+    /* Center align the icons */
+    .timeline-with-icons .timeline-item {
+      text-align: center;
+    }
+  
+    /* Adjust the text content to center-align */
+    .timeline-with-icons .timeline-item h5,
+    .timeline-with-icons .timeline-item p {
+      text-align: center;
+    }
+  }
+/* Projects Section */
+.section_our_solution .row {
+    align-items: center;
+}
+
+.our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.our_solution_category .solution_cards_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.solution_cards_box .solution_card {
+    flex: 0 50%;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 265px;
+    transition: 0.7s;
+}
+
+.solution_cards_box .solution_card:hover {
+    background: #309df0;
+    color: #fff;
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+.solution_cards_box .solution_card:hover::before {
+    background: rgb(85 108 214 / 10%);
+}
+
+.solution_cards_box .solution_card:hover .solu_title h3,
+.solution_cards_box .solution_card:hover .solu_description p {
+    color: #fff;
+}
+
+.solution_cards_box .solution_card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    width: 170px;
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+}
+
+.solution_cards_box .solution_card:hover .solu_description button {
+    background: #fff !important;
+    color: #309df0;
+}
+
+.solution_card .so_top_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solution_card .so_top_icon i {
+    font-size: 2rem;
+    color: #309df0;
+}
+
+.solution_card .solu_title h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.solution_card .solu_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.solution_card .solu_description button {
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(
+      140deg,
+      #42c3ca 0%,
+      #42c3ca 50%,
+      #42c3cac7 75%
+    ) !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 16px;
+}
+
+.our_solution_content h1 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hover_color_bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+}
+
+.solution_cards_box .solution_card:hover .hover_color_bubble {
+    top: 0rem;
+}
+
+/*start media query*/
+@media screen and (min-width: 320px) {
+    .sol_card_top_3 {
+        position: relative;
+        top: 0;
+    }
+
+    .our_solution_category {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .our_solution_category .solution_cards_box {
+        flex: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .our_solution_category .solution_cards_box {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .sol_card_top_3 {
+        position: relative;
+        top: -3rem;
+    }
+    .our_solution_category {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Publications Section */
+/* Updated container for Publications */
+.container.my-5 {
+    max-width: 100%;
+    padding-left: 50px; /* Add gap on left */
+    padding-right: 50px; /* Add gap on right */
+  }
+  
+  /* Updated Timeline Styles */
+  ul.timeline-3 {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  ul.timeline-3:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 50px; /* Adjust the position to account for the gap */
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  
+  ul.timeline-3 > li {
+    margin: 20px 0;
+    padding-left: 40px; /* Increase padding for content to align with the timeline */
+  }
+  
+  ul.timeline-3 > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 40px; /* Adjust bullet position */
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+  ul.timeline-3 > li a{
+    margin-left: 10px;
+    
+  }
+
+  /* Achievements Section Styles */
+body {
+    margin-top: 20px;
+}
+
+.card-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+
+.coloured-cards .card {
+    margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+    border-radius: 0px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card[data-background="image"] .title, .card[data-background="image"] .stats, 
+.card[data-background="image"] .category, .card[data-background="image"] .description, 
+.card[data-background="image"] .content, .card[data-background="image"] .card-footer, 
+.card[data-background="image"] small, .card[data-background="image"] .content a, 
+.card[data-background="color"] .title, .card[data-background="color"] .stats, 
+.card[data-background="color"] .category, .card[data-background="color"] .description, 
+.card[data-background="color"] .content, .card[data-background="color"] .card-footer, 
+.card[data-background="color"] small, .card[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+
+.card.card-just-text .content {
+    padding: 50px 65px;
+    text-align: center;
+}
+
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+
+.card[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card .description {
+    font-size: 16px;
+    color: #66615b;
+}
+
+.content-card {
+    margin-top: 30px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*======== COLORS ===========*/
+body {
+    margin-top: 20px;
+}
+
+.card-big-shadow {
+    max-width: 100%; /* Allow cards to take up the full width */
+    position: relative;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.card.card-just-text .content {
+    padding: 30px; /* Adjusted padding to fit */
+    text-align: center;
+}
+
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+
+.content-card {
+    margin-top: 30px;
+}
+
+.card[data-color="green"] {
+    background: #d5e5a3;
+}
+
+.card[data-color="purple"] {
+    background: #baa9ba;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/* Adjustments for two cards in a row */
+@media (min-width: 768px) {
+    .col-md-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Contact Section Styling */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icon {
+    background-color: #003399;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  .contact-icon i {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contact-label {
+    font-weight: bold;
+    color: #666;
+    margin-right: 5px;
+  }
+  
+  .contact-info {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text-primary {
+    color: #003399 !important;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  
+  .contact-list li i {
+    margin-right: 20px;
+  }
+
+  /* Certifications Section */
+.certifications {
+    padding: 60px 0; /* Same padding as other sections */
+    background-color: #f4f4f4; /* Optional: you can change this background color */
+}
+
+.certifications h2 {
+    color: #003399; /* Consistent heading color */
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-weight: bold; /* Ensuring the heading is bold */
+}
+
+.certifications p {
+    font-size: 1.2rem; /* Slightly larger font for the placeholder */
+    color: #666; /* Muted color for the 'Coming Soon' text */
+    font-style: italic; /* To emphasize the placeholder text */
+}
+/* Global heading color and style */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #003399; /* Consistent heading color */
+    margin-bottom: 20px; /* Optional: for consistent spacing below headings */
+}
+/* Responsive Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #003399;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    z-index: 1000;
+  }
+  
+  main {
+    margin-left: 255px;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: calc(100% - 255px);
+  }
+  
+  /* Responsive Mobile Menu */
+  @media (max-width: 991px) {
+    .sidebar {
+      display: none; /* Hide sidebar on smaller screens */
+    }
+  
+    main {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    /* Ensure full width content on mobile */
+    section {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1001;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .about-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-image img {
+      width: 200px; /* Adjust the size of the profile image */
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  
+    .about-content {
+      padding: 0; /* Remove padding */
+      text-align: center; /* Center the content */
+      max-width: 100%; /* Ensure full width on small screens */
+    }
+  
+    .about-content p {
+      margin-bottom: 20px;
+      font-size: 16px; /* Adjust text size if necessary */
+    }
+  
+    .about-content .btn {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 750px) {
+    .skill-list {
+      grid-template-columns: 1fr; /* Display only one skill bar per row */
+      padding-left: 20px;  /* Add left padding */
+      padding-right: 20px; /* Add right padding */
+      gap: 20px; /* Adjust the gap between rows */
+    }
+  
+    .skill {
+      width: 100%; /* Make the skill bar take full width */
+      margin: 0 auto; /* Center it */
+    }
+  }
+/* Timeline section adjustments for screens smaller than 1360px */
+@media (max-width: 1360px) {
+    ul.timeline-list {
+      padding-left: 20px; /* Ensure enough padding */
+      padding-right: 20px; /* Ensure enough padding */
+    }
+  
+    ul.timeline-list li {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align the content */
+    }
+  
+    ul.timeline-list li .timeline_content {
+      width: 100%; /* Full width for each item */
+      float: none; /* Remove float for center alignment */
+      margin-left: 0; /* Remove any left margin */
+      margin-right: 0; /* Remove any right margin */
+      text-align: left; /* Align text to the left inside the box */
+    }
+  
+    ul.timeline-list:before {
+      left: 50%; /* Keep the vertical line in the center */
+      transform: translateX(-50%); /* Ensure the line is centered */
+    }
+  
+    ul.timeline-list li:before {
+      left: 50%; /* Position the dot marker in the center */
+      transform: translateX(-50%); /* Ensure the dot marker is centered */
+    }
+  }
+
+  /* Disable horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents the horizontal scroll */
+}
+
+/* Ensure sections don't exceed screen width */
+section, main, aside, nav, footer, header {
+    max-width: 100%; /* Ensures sections fit within the screen */
+    overflow-x: hidden; /* Extra precaution for sections */
+}
+
+/* Prevent margin or padding issues */
+.container, .row {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Ensure any fixed-width elements behave responsively */
+img, video, iframe, .sidebar, .timeline-with-icons {
+    max-width: 100%;
+}
+
+/* Specific fixes for mobile screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-with-icons {
+        padding-left: 10px; /* Reduces padding on small screens */
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    /* Ensure no horizontal scrolling at small screen sizes */
+    .container, .row {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

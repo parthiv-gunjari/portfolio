@@ -111,7 +111,7 @@ a, button {
 .menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
@@ -125,7 +125,7 @@ a, button {
 }
 
 .footer {
-    padding: 20px;
+    padding: 15px;
     color: white;
     font-size: 12px;
 }
@@ -195,6 +195,7 @@ section {
     font-size: 4rem;
     font-weight: 700;
     margin: 0;
+    color: white;
 }
 
 .dynamic-text {
@@ -507,27 +508,30 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
 }
 
 .solution_cards_box .solution_card {
-    flex: 0 50%;
+    flex: 0 1 calc(50% - 60px); /* Ensures two cards in a row with gaps */
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
       0 5px 15px 0 rgba(37, 44, 97, 0.15);
     border-radius: 15px;
     margin: 30px;
-    padding: 10px 15px;
+    padding: 20px;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    min-height: 265px;
     transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .solution_cards_box .solution_card:hover {
     background: #309df0;
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.05); /* Reduced hover scale for smoother effect */
     z-index: 9;
 }
 
@@ -567,6 +571,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .solution_card .so_top_icon i {
@@ -576,14 +581,21 @@ section {
 
 .solution_card .solu_title h3 {
     color: #212121;
-    font-size: 1.3rem;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .solution_card .solu_description p {
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limits to 6 lines for readability */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .solution_card .solu_description button {
@@ -598,7 +610,8 @@ section {
     color: #fff;
     font-weight: 500;
     font-size: 1rem;
-    padding: 5px 16px;
+    padding: 8px 16px;
+    align-self: flex-end;
 }
 
 .our_solution_content h1 {
@@ -626,6 +639,45 @@ section {
     top: 0rem;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .solution_cards_box .solution_card {
+        flex: 0 1 calc(100% - 60px); /* One card per row on smaller screens */
+    }
+
+    .solution_card .so_top_icon i {
+        font-size: 1.75rem;
+    }
+
+    .solution_card .solu_description p {
+        -webkit-line-clamp: 4; /* Limits to 4 lines on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solution_card .solu_title h3 {
+        font-size: 1.2rem;
+    }
+
+    .solution_card .so_top_icon i {
+        font-size: 1.5rem;
+    }
+
+    .solution_card .solu_description p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .solution_card {
+        margin: 20px; /* Reduced margin for small screens */
+        padding: 15px; /* Smaller padding on mobile */
+    }
+
+    .solution_card .solu_description p {
+        -webkit-line-clamp: 3; /* Show fewer lines on very small screens */
+    }
+}
 /*start media query*/
 @media screen and (min-width: 320px) {
     .sol_card_top_3 {
@@ -815,7 +867,12 @@ body {
     max-width: 100%; /* Allow cards to take up the full width */
     position: relative;
 }
-
+#achievements{
+    color: black;
+}
+.achievements{
+    color: #333 !important;
+}
 .card {
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
@@ -997,7 +1054,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   
     .navbar-nav .nav-link {
-      padding: 10px;
+      padding: 5px;
     }
   }
 

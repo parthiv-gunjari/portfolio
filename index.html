@@ -83,16 +83,16 @@
           
               <!-- Social Media Icons -->
               <div class="social-icons">
-                <a href="https://github.com/your-github-profile" target="_blank" class="icon-link">
+                <a href="https://github.com/parthiv-gunjari" target="_blank" class="icon-link">
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" class="icon-link">
+                <a href="https://www.linkedin.com/in/parthiv-kumar-gunjari/" target="_blank" class="icon-link">
                   <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="mailto:parthivkumargunjari@gmail.com" class="icon-link">
                   <i class="fas fa-envelope"></i>
                 </a>
-                <a href="tel:+1234567890" class="icon-link">
+                <a href="tel:+19408435294" class="icon-link">
                   <i class="fas fa-phone"></i>
                 </a>
               </div>
@@ -125,43 +125,34 @@
         <h2>SKILLS</h2>
         <div class="skill-list">
           <div class="skill">
-            <p>Web Development: HTML5, CSS, Bootstrap, ReactJS, Angular.js, Node.js, Express.js, PHP</p>
+            <p><span><h6>Web Development:</h6></span> HTML5, CSS, Bootstrap, ReactJS, Angular.js, Node.js, Express.js, PHP</p>
             <div class="progress">
               <div class="progress-bar" data-width="85%"></div>
             </div>
           </div>
           <div class="skill">
-            <p>Programming Languages: Python, Java, Bash</p>
+           
+            <p><span> <h6>Programming Languages: </h6></span>C,  Java </p>
             <div class="progress">
-              <div class="progress-bar" data-width="80%"></div>
+              <div class="progress-bar" data-width="70%"></div>
             </div>
           </div>
+          
           <div class="skill">
-            <p>DevOps Tools: Jenkins, Docker, Kubernetes</p>
+            <p><span> <h6>Version Control:  </h6></span>Git, GitHub</p>
             <div class="progress">
-              <div class="progress-bar" data-width="75%"></div>
+              <div class="progress-bar" data-width="70%"></div>
             </div>
           </div>
+          
           <div class="skill">
-            <p>Version Control: Git, GitHub, Git Workflows</p>
+            <p><span> <h6>Operating Systems: </h6></span> Linux, Windows, Ubuntu</p>
             <div class="progress">
               <div class="progress-bar" data-width="70%"></div>
             </div>
           </div>
           <div class="skill">
-            <p>Scripting: Bash, Python</p>
-            <div class="progress">
-              <div class="progress-bar" data-width="75%"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <p>Operating Systems: Linux, Windows, Ubuntu</p>
-            <div class="progress">
-              <div class="progress-bar" data-width="70%"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <p>Cloud Technologies: AWS, IBM Cloud</p>
+            <p><span> <h6>Cloud Technologies: </h6></span>AWS</p>
             <div class="progress">
               <div class="progress-bar" data-width="75%"></div>
             </div>
@@ -381,6 +372,7 @@
 
 
   </section>
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
     </main>
 
@@ -500,6 +492,29 @@ window.addEventListener('scroll', activateNavLink); // Call the function on scro
           $('.navbar-collapse').collapse('hide');
         }
       });
+      //page load
+      window.onload = function () {
+    // Scroll to the top of the page when the page is loaded
+    window.scrollTo(0, 0);
+    window.location.hash = ""; // Clear any hash in the URL
+  };
+  //scroll top
+  $(document).ready(function(){
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 2300) {
+			$('#back-to-top').fadeIn();
+		} else {
+			$('#back-to-top').fadeOut();
+		}
+	});
+	// scroll body to 0px on click
+	$('#back-to-top').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 400);
+		return false;
+	});
+});
       
     </script>
   </body>

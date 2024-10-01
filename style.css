@@ -94,9 +94,7 @@ a, button {
     position: relative;
     z-index: 1;
     background-color: white; /* or use your image background color */
-    /* Apply shadow matching the background color */
-    box-shadow: 0px 0px 12px 4px rgba(0, 51, 153, 0.3), /* Blue shadow */
-                0px 0px 12px 4px rgba(255, 204, 0, 0.3); /* Yellow shadow */
+    
 }
 
 .menu {
@@ -105,7 +103,7 @@ a, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 17px;
 }
 
 .menu a {
@@ -128,6 +126,8 @@ a, button {
     padding: 15px;
     color: white;
     font-size: 12px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 .footer p{
     color: white;
@@ -1186,5 +1186,40 @@ img, video, iframe, .sidebar, .timeline-with-icons {
     section {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    z-index: 1000;   
+
+  
+}
+/* Media Query for screen sizes less than 768px (tablets) */
+@media (max-width: 768px) {
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;     /* Adjust bottom position */
+        right: 20px;      /* Adjust right position */
+        padding: 8px; 
+        z-index: 1000;   
+        
+       
+    }
+}
+
+/* Media Query for screen sizes less than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .back-to-top {
+        position: fixed;
+        bottom: 15px;     /* Adjust bottom position */
+        right: 10px;      /* Adjust right position */
+        padding: 6px;
+        z-index: 1000;   
+        
+        
     }
 }

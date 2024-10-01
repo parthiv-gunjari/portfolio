@@ -1201,7 +1201,7 @@ img, video, iframe, .sidebar, .timeline-with-icons {
 /* Media Query for screen sizes less than 768px (tablets) */
 @media (max-width: 768px) {
     .back-to-top {
-        position: fixed;
+        
         bottom: 20px;     /* Adjust bottom position */
         right: 20px;      /* Adjust right position */
         padding: 8px; 
@@ -1214,7 +1214,7 @@ img, video, iframe, .sidebar, .timeline-with-icons {
 /* Media Query for screen sizes less than 480px (mobile phones) */
 @media (max-width: 480px) {
     .back-to-top {
-        position: fixed;
+      
         bottom: 15px;     /* Adjust bottom position */
         right: 10px;      /* Adjust right position */
         padding: 6px;

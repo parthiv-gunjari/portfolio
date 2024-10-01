@@ -183,7 +183,7 @@ section {
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .home-content {
@@ -1215,7 +1215,7 @@ img, video, iframe, .sidebar, .timeline-with-icons {
 @media (max-width: 480px) {
     .back-to-top {
       
-        bottom: 15px;     /* Adjust bottom position */
+        bottom: 25px;     /* Adjust bottom position */
         right: 10px;      /* Adjust right position */
         padding: 6px;
         z-index: 1000;   
